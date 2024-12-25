@@ -87,3 +87,8 @@ body {
     color: #2f4f4f;
     font-weight: 500;
 }
+
+.equal {
+    background-color: #1b3030 !important;
+    color: #D3D3D3 !important;
+}
