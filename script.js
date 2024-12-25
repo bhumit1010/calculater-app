@@ -7,29 +7,21 @@ inputField.addEventListener("input", () => {
 });
 let str = "/01234567899+-*."
 document.addEventListener('keydown', function (e) {
-    if (e.key === 'Enter') 
-    {
-        const result = eval(inputField.value); 
-        inputField.value = result; 
+    if (e.key === 'Enter') {
+        const result = eval(inputField.value);
+        inputField.value = result;
         console.log(result);
         console.log(e.key);
-        e.preventDefault(); 
-    } 
-    else if(e.key === 'Backspace')
-    {
+        e.preventDefault();
+    }
+    else if (e.key === 'Backspace') {
         inputField.value = inputField.value.slice(0, -1);
         console.log(e.key);
-        e.preventDefault(); 
+        e.preventDefault();
     }
-    else if (str.includes(e.key)==true)
-    {
+    else if (str.includes(e.key) == true) {
         inputField.value += e.key
         console.log(e.key);
-        e.preventDefault(); 
+        e.preventDefault();
     }
-    console.log(e.key);
 });
-
-let str2 = "hello world"
-let test = str2.includes('o')
-console.log (test)
