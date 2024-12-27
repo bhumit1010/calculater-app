@@ -28,26 +28,38 @@ body{
 
 }
 .input {
-    width: 95%;
+   width: 100%;
     height: 100px;
     margin-top: 30px;
+    padding:0px 10px;
+    
+}
+.inputbox{
+    width: 100%;
+    height: 100px;
+    background-color: #d02222;
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden !important;
     display: flex;
-    text-align: right;
-    justify-content: flex-end;
-    align-items: flex-end;
 
+    justify-content: flex-end;
+    align-items: center !important;
+    
 }
 .input input{
-    width: 60px;
+    float: right;
+    width: 2000px;
     height: 90px;
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #ffffff;
+    
+   
    
     text-align: right;
     font-size: 44px;
-    flex:1;
+    
     outline: none;
     color: rgb(0, 0, 0);
 }
